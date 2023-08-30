@@ -74,12 +74,7 @@ class _FristScreenState extends State<FristScreen> {
                             }))),
                 GestureDetector(
                     onTap: () async {
-//  SharedPreferences shared =
-//                       await SharedPreferences.getInstance();
-//                   shared.clear();
-//                   Auth.fireAuth.SignOut();
-//                   // Scaffold.of(context).showSnackBar(
-//                   //     SnackBar(content: Text(' double clic to SignOut ')));
+
                       Navigator.popAndPushNamed(context, 'login');
                     },
                     child: const ListTile(

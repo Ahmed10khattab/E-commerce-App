@@ -1,6 +1,4 @@
-//import 'dart:convert';
-//import 'dart:ffi';
-//import 'dart:io';
+ 
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fire1/functionfirebase/firestore.dart';
@@ -32,14 +30,7 @@ class _EditState extends State<Edit> {
           for (var i in snapshot.data!.docs) {
             List<ProductModele> product = [];
 
-           // var data = i.data();
-            // product.add(ProductModele(
-            //   pcategory: data['name'],
-            //   pdescription:data ['Discription'],
-            //   plocation:data ['location'],
-            //   pname:data ['name'],
-            //   pprice:data[ 'price'],
-            // ));
+          
 
  
           }

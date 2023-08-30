@@ -9,9 +9,7 @@ import 'package:flutter/foundation(1).dart';
 import 'package:flutter/material.dart';
 
 class Store {
-  // ADD(name,category,location,price) {
-  //   Stor.collection('d').add({"name":name,"category":category,"price":price,"location":location});
-  // }
+  
 getorder(){
    Stream<QuerySnapshot>  geto =
         Stor.collection('product').snapshots();
@@ -25,23 +23,7 @@ getorder(){
           .snapshots();
     }
 
-  // load() async {
-  //   var Stor = FirebaseFirestore.instance;
-  //   List<ProductModele> p = [];
-  //   await for (var counter in Stor.collection('product').snapshots()) {
-  //     for (var i in counter.docs) {
-  //       var d = i.data();
-  //       p.add(ProductModele(
-  //         pcategory: d['name'],
-  //         pdescription: d['Discription'],
-  //         plocation: d['location'],
-  //         pname: d['name'],
-  //         pprice: d['price'],
-  //       ));
-  //     }
-  //   }
-  //   return p;
-  // }
+  // 
 
   static var store = Store();
   FirebaseFirestore Stor = FirebaseFirestore.instance;

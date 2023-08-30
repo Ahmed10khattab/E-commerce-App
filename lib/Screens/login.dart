@@ -126,15 +126,13 @@ class _LoginState extends State<Login> {
                               keep();
                             }
                             var p = AllFormFeild.currentState;
-                          
+
                             if (p!.validate()) {
                               p.save();
                               if (Provider.of<Adminn>(context, listen: false)
                                       .isadmin &&
                                   password.text == 'admin1234') {
                                 try {
-                                   
-
                                   FirebaseAuth auth = FirebaseAuth.instance;
                                   await auth.signInWithEmailAndPassword(
                                       email: email.text.trim(),
@@ -160,18 +158,6 @@ class _LoginState extends State<Login> {
                                     await auth.signInWithEmailAndPassword(
                                         email: email.text.trim(),
                                         password: password.text.trim());
-
-                                // Store.store.signin(email.text, password.text);
-
-                                //  var user = userCredential.user;
-                                // print(user!.uid);
-                                // showDialog(
-                                //       context: context,
-                                //       builder: (context) => const Center(
-                                //               child: CircularProgressIndicator(
-                                //             backgroundColor: Colors.blue,
-                                //             color: Colors.white,
-                                //           )));
 
                                 Navigator.pushReplacementNamed(
                                     context, 'firstScreen');
@@ -283,31 +269,4 @@ class _LoginState extends State<Login> {
       return null;
     }
   }
-
-  // void _valid(BuildContext context) async {
-  //   if (AllFormFeild.currentState!.validate()) {
-  //     AllFormFeild.currentState!.save();
-  //     if (Provider.of<Adminn>(context).isadmin) {
-  //       if (password == pr) {
-  //         try {
-  //           Store.store.signin(email.text, password.text);
-  //           Navigator.pushNamed(context, 'AdminScreen');
-  //         } catch (e) {
-  //           Scaffold.of(context).showSnackBar(SnackBar(content: Text('err')));
-  //         }
-  //       } else {
-  //         Scaffold.of(context).showSnackBar(SnackBar(content: Text('aaaaa')));
-  //       }
-  //     } else {
-  //       try {
-  //         Store.store.signin(email.text, password.text);
-  //         Navigator.pushNamed(context, 'firstScreen');
-  //       } catch (e) {
-  //         Scaffold.of(context).showSnackBar(SnackBar(content: Text('mmmm')));
-  //       }
-  //     }
-  //   } else {
-  //     Scaffold.of(context).showSnackBar(SnackBar(content: Text('ffffff')));
-  //   }
-  // }
 }

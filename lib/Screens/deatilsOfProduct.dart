@@ -165,37 +165,7 @@ class _DetailOfProductState extends State<DetailOfProduct> {
                           const SnackBar(content: Text("added to cart")));
                     }
 
-                    // showDialog(
-                    //     context: context,
-                    //     builder: (context) => AlertDialog(
-                    //           title: Column(
-                    //             crossAxisAlignment: CrossAxisAlignment.start,
-                    //             children: [
-                    //               Text('quantity: ${data.PQuantity}'),
-                    //               Text(
-                    //                   'total price: \$ ${data.PQuantity! * int.parse(data.pprice!)}'),
-                    //             ],
-                    //           ),
-                    //           content: TextFormField(
-                    //             onChanged: (value) => adresse = value,
-                    //             decoration: const InputDecoration(
-                    //                 hintText: 'your adresse'),
-                    //           ),
-                    //           actions: [
-                    //             MaterialButton(
-                    //               onPressed: () {
-                                  
-                    //               },
-                    //               child: Text('confirm'),
-                    //             ),
-                    //             MaterialButton(
-                    //               onPressed: () {
-                    //                 Navigator.pop(context);
-                    //               },
-                    //               child: Text('cancel'),
-                    //             )
-                    //           ],
-                    //         ));
+                 
                   },
                   child: Container(
                     height: h * .07,

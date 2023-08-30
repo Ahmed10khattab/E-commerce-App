@@ -179,10 +179,7 @@ class ScreenCard extends StatelessWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            // Text('quantity: ${data.PQuantity}'),
-                                            // Text(
-                                            //    'total price: \$ ${data.PQuantity! * int.parse(data.pprice!)}'),
-                                          ],
+                                           ],
                                         ),
                                         content: TextFormField(
                                           onChanged: (value) => adresse = value,
